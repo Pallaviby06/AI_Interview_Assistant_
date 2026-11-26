@@ -23,6 +23,7 @@ role = st.selectbox("Select Job Role",[
 ])
 
 if st.button("Generate Interview Questions"):
+  
 
   prompt = "Generate 5 interview questions for the role of" + role
   response = client.chat.completions.create(
