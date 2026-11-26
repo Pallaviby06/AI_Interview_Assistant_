@@ -33,7 +33,7 @@ if st.button("Generate Interview Questions"):
     ]
   )
 
-output = response.choices[0].messege.content
-st.write(output)
+  output = response.choices[0].messege.content
+  st.write(output)
 
 
