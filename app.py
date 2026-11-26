@@ -31,7 +31,7 @@ difficulty = st.selectbox("Select Difficulty level", [
 if st.button("Generate Interview Questions"):
   
 
-   prompt = "Generate 5 interview questions for the role of" + role + difficulty
+  prompt = "Generate 5 interview questions for the role of" + role + difficulty
 response = client.chat.completions.create(
     model="openai/gpt-oss-120b",
     messages=[
